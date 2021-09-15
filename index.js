@@ -34,7 +34,7 @@ app.use(cors({
 app.options("*", cors());
 
 mongoose
-  .connect(process.env.MONGO_URL, {
+  .connect('mongodb+srv://childDB:childDB@cluster0.ukpuw.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
