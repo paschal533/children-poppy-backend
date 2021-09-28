@@ -16,7 +16,7 @@ const cors = require("cors");
 dotenv.config();
 app.use(express.json());
 app.use("/images", express.static(path.join(__dirname, "/images")));
-var allowedOrigins = ['https://children-poppy.web.app', 'http://localhost:3000'];
+var allowedOrigins = ['https://children-poppy.web.app', 'http://localhost:3000', 'https://childrenspoppy.com'];
 
 app.use(cors({
   origin: function (origin, callback) {
